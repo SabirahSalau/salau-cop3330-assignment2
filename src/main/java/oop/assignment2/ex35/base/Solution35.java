@@ -33,7 +33,7 @@ public class Solution35 {
 
     }
 
-    private static String winningContestant(){
+    public static String winningContestant(){
         Random rand = new Random();
         int number = rand.nextInt(contestants.size());
         String winner = contestants.get(number);

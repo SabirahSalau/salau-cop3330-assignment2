@@ -17,10 +17,10 @@ public class Solution36 {
         inputs();
         printNumbers();
 
-        double average = calculations.average();
-        double min = calculations.minimum();
-        double max = calculations.maximum();
-        double standardDev = calculations.standardDeviation(average);
+        double average = calculations.average(numbers);
+        double min = calculations.minimum(numbers);
+        double max = calculations.maximum(numbers);
+        double standardDev = calculations.standardDeviation(average, numbers);
 
         output(average, min, max, standardDev);
 

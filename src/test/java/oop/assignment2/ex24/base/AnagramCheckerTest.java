@@ -1,6 +1,4 @@
 package oop.assignment2.ex24.base;
-
-import oop.assignment2.ex24.base.AnagramChecker;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

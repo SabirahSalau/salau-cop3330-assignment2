@@ -17,22 +17,9 @@ public class Solution33 {
         int[] randNumber = new int[]{0, 1, 2, 3};
         int answer = getRandomNumber(randNumber);
         question("What's your question?");
+        String response = output(answer);
+        System.out.println(response);
 
-        String output = "";
-        switch (answer){
-            case 0:
-                System.out.println("Yes.");
-                break;
-            case 1:
-                System.out.println("No.");
-                break;
-            case 2:
-                System.out.println("Maybe.");
-                break;
-            case 3:
-                System.out.println("Ask again later.");
-                break;
-        }
     }
 
     public static void question(String prompt){
@@ -44,5 +31,25 @@ public class Solution33 {
     {
         int answer = new Random().nextInt(answerNumber.length);
         return answerNumber[answer];
+    }
+
+    public static String output(int answer){
+        String output = "";
+        switch (answer){
+            case 0:
+                output = ("Yes.");
+                break;
+            case 1:
+                output = ("No.");
+                break;
+            case 2:
+                output = ("Maybe.");
+                break;
+            case 3:
+                output = ("Ask again later.");
+                break;
+        }
+
+        return output;
     }
 }

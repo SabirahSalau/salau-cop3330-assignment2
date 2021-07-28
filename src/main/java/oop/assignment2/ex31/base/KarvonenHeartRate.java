@@ -2,7 +2,7 @@ package oop.assignment2.ex31.base;
 
 public class KarvonenHeartRate
 {
-    public boolean checkIncrease(String age, String heartRate)
+    public static boolean checkIncrease(String age, String heartRate)
     {
         if(!age.matches("[0-9]+"))
         {
